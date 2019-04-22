@@ -1,0 +1,6 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+
+RewriteRule ^todo$   index.php [nc,qsa]
+RewriteRule ^todo/([0-9]+)$   index.php?i=$1 [nc,qsa]
